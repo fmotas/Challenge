@@ -39,7 +39,7 @@ namespace Challenge.Controllers
             var item = objds.GetItem('y');
             if (item == null)
             {
-                return NotFound();
+                return NoContent();
             }
             return new ObjectResult(item);
         }
@@ -49,7 +49,7 @@ namespace Challenge.Controllers
             var item = objds.GetItem('n');
             if (item == null)
             {
-                return NotFound();
+                return NoContent();
             }
             return new ObjectResult(item);
         }
